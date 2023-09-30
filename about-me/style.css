@@ -1,0 +1,666 @@
+@media (prefers-color-scheme: dark) {
+    /* Styles for dark mode */
+  }
+  
+  @media (prefers-color-scheme: light) {
+    /* Styles for light mode */
+  }
+/* Color Pallets
+Light mode:
+- rgb(62, 146, 204) 
+- rgb(94, 163, 212)
+- rgb(71, 123, 161)
+Dark mode:
+- rgb(42, 98, 143)
+- rgb(27, 63, 92)
+- rgb(22, 50, 79) */
+body {
+    /* Styles for light mode */
+    background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1156671099732496545/light_mode.png?ex=6515d168&is=65147fe8&hm=7dfc246bbc27885ab9edd381bc2d23b234b43cf5d837d0581bd38654da7ffc3c&');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    font-family: 'Pacifico', cursive;
+}
+
+body.dark-mode {
+    /* Styles for dark mode */
+    background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1156671558677430372/Dark_mode.png?ex=6515d1d5&is=65148055&hm=adb29bd3d1dbdf0a83dda0c2ebffa049abe52460c5ace376eb7857b32ae4be35&');
+    color: rgb(223, 224, 234);
+}
+
+  
+   /* The switch - the box around the slider */
+   .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-image: url('https://www.wallpaperflare.com/static/887/996/885/drawing-sky-clouds-cloudy-wallpaper.jpg');
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    
+    background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1156298612842713119/Untitled-1.png?ex=65147680&is=65132500&hm=12cd8c1158d2fba971d7f05200d303699251ecaea8f9065a1768ab24e1e2a409&');
+    
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1156916254108557352/drawing-sky-clouds-cloudy-wallpaper.png?ex=6516b5b9&is=65156439&hm=78d4c1853684875a9dbab577a7779f8f7f16152a7f8fb9594eb5ffe28b7f276a&');
+    background-size: cover;
+  }
+  /*links::
+  light mode:
+    Rounder: https://i.ibb.co/7JfqXxB/sunny.png
+    Slider: https://www.wallpaperflare.com/static/887/996/885/drawing-sky-clouds-cloudy-wallpaper.jpg
+  dark mode: 
+    Rounder: https://i.ibb.co/FxzBYR9/night.png
+    Slider: https://static.vecteezy.com/system/resources/previews/001/308/886/original/night-sky-with-stars-vector.jpg */
+  .slider.round:before {
+    border-radius: 50%;
+    background: url('https://i.ibb.co/7JfqXxB/sunny.png')
+   
+  }
+  input:checked + .slider:before {
+    background:url('https://i.ibb.co/FxzBYR9/night.png');
+    background-repeat: no-repeat;
+  }
+  .dormanor-image{
+    height: 36px;
+    width: 36px;
+
+  }
+/*Image header*/
+body {
+
+  font-family: "Lexend Exa", sans-serif;
+}
+body nav {
+  display: flex;
+  position: fixed;
+  background-color: rgb(25, 10, 10);
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  border: 2px solid #f1ebed;
+  border-radius: 30px;
+  animation: slide-in 1s ease-out;
+  transition: background-color 0.5s ease-in;
+  color: rgb(223, 224, 234);
+}
+
+body.dark-mode nav {
+  background-color: rgb(19, 40, 71);
+  transition: background-color 0.5s ease-in;
+  border: 2px solid #060505;
+}
+.nav-dormanor-name {
+  margin-top: 3;
+  padding-top: 10px;
+  padding-left: 30px;
+
+}
+
+/* Styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  nav {
+    left: 50%; /* Center the nav on small screens */
+    /* Add any other styles you want to change on small screens */
+  }
+}
+
+ul {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0 30px;
+  list-style-type: none;
+  li:not(:last-child) {
+    margin-right: 40px;
+  }
+  li {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background 0.2s;
+    a {
+      color: #2375d8;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      display: block;
+      margin: 12px -12px;
+      padding: 0;
+      background: #ffa91b;
+      border: 2px solid #f7c833;
+      border-right: 2px solid #f89329;
+      border-bottom: 2px solid #f89329;
+      border-radius: 5px;
+      transition: opacity 0.2s, visibility 0.2s;
+      li {
+        margin: -2px 0 0 -2px;
+        width: calc(100% - 20px);
+        line-height: 1.7;
+        a {
+          color: #2375d8;
+        }
+      }
+    }
+    &:hover {
+      background: #ec4138;
+      border: 2px solid #f05749;
+      border-right: 2px solid #e02a21;
+      border-bottom: 2px solid #e02a21;
+      a {
+        color: #f9f8fd;
+      }
+      ul {
+        visibility: visible;
+        opacity: 1;
+        box-shadow: 0px 3px 5px 2px #ebecf1;
+        li {
+          a {
+            color: #f9f8fd;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    top: -50px;
+  }
+  40% {
+    top: 20px;
+  }
+  70% {
+    top: 10px;
+  }
+  100% {
+    top: 15px;
+  }
+}
+/* popup menu */
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  
+  border: none;
+  background: #4070f4;
+  border-radius:10px ;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #265df2;
+}
+button.show-modal{
+left: 50% !important;
+top: 50% !important;
+margin-bottom: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+opacity: 1;
+visibility: visible ;
+transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
+}
+
+.modal-box {
+  position: fixed;
+  padding-left: 300px;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+body .modal-box {
+  position: fixed;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 24px;
+  background-color: rgba(223, 224, 234,0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+body.dark-mode .modal-box{
+  position: fixed;
+  color: rgb(223, 224, 234);
+  left: 50% !important;
+  top: 50% !important; 
+  transform: translate(-50%, -50%) !important;
+  box-shadow: 0 5px 10px rgba(97, 78, 146, 0.1);
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 24px;
+  background-color: rgba(24, 49, 83, 0.8); /* rgb(24, 49, 83) with 20% opacity */
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+section.active .show-modal {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.overlay {
+  
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 251, 251, 0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+section.active .overlay {
+  opacity: 0.5;
+  pointer-events: auto;
+}
+section.active .modal-box {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-box i {
+  font-size: 70px;
+  color: #4070f4;
+}
+body .modal-box h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+  opacity: 1;
+}
+body.dark-mode .modal-box h2{
+  color: white;
+}
+body .modal-box h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  opacity: 1;
+}
+body.dark-mode .modal-box h3{
+  color: white;
+}
+.modal-box .buttons {
+  margin-top: 25px;
+}
+.modal-box button {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 10px;
+}
+/* toast notification */
+.toast{
+  position: absolute;
+  
+  z-index: 1000;
+  top: 25px;
+  right: 30px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px 35px 20px 25px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-left: 6px solid #4070f4;
+  overflow: hidden;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active{
+  transform: translateX(0%);
+  position: fixed;
+}
+
+.toast .toast-content{
+  display: flex;
+  align-items: center;
+}
+
+.toast-content .check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  background-color: #4070f4;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.toast-content .message{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.message .text{
+  font-size: 20px;
+  font-weight: 400;;
+  color: #666666;
+}
+
+.message .text.text-1{
+  font-weight: 600;
+  color: #333;
+}
+
+.toast .close{
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toast .close:hover{
+  opacity: 1;
+}
+
+.toast .progress{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #ddd;
+}
+
+.toast .progress:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+}
+
+.progress.active:before{
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100%{
+      right: 100%;
+  }
+}
+
+button{
+  padding: 12px 20px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background-color: #4070f4;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover{
+  background-color: #0e4bf1;
+}
+
+.toast.active ~ button{
+  pointer-events: none;
+}
+.tosty{
+  display: none;
+}
+/* about me */
+.about-me{
+  color: white;
+  border-width: solid 40px;
+  background-color: rgb(73, 122, 255);
+  border-radius: 30px;
+  text-align: left;
+  margin-bottom: 100px;  
+}
+/* About me */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f3f3f3;
+  font-family: Arial, sans-serif;
+}
+
+#about-me {
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(62, 146, 204,0.8);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+
+
+body.dark-mode #about-me{
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(21, 88, 217,0.8);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  color: white;
+}
+
+#about-me:hover {
+  box-shadow: 0px 30px 30px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Languages */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f3f3f3;
+  font-family: Arial, sans-serif;
+}
+
+#languages {
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(62, 146, 204,0.8);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ; /*You can adjust this based on how many flags you want in a row*/
+}
+
+.grid-item {
+ padding: 20px;
+}
+.grid-item:hover {
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+body.dark-mode #languages{
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(21, 88, 217,0.8);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  color: white;
+}
+/* socials */
+body {
+  scroll-behavior: smooth;
+}
+
+#socials {
+  margin-top: 900px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(62, 146, 204,0.8);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode #socials{
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(21, 88, 217,0.8);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  color: white;
+}
+#socials img {
+  width: 30px;
+}
+#socials img:hover{
+    transform: scale(1.1);
+    transition: transform .2s;
+  }
+/* skills */
+#skills{
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(62, 146, 204,0.8);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1); 
+}
+body.dark-mode #skills{
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(21, 88, 217,0.8);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  color: white;
+}
+#skills img {
+  width: 30px;
+}
+#skills img:hover {
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+/* projects */
+.dormanor-utility{
+  background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1157381127758172302/cute_dragon_fruit.png?ex=651866ab&is=6517152b&hm=aa5bebab059ac9da8c9c468f14d586f4c71569d978019eb1f5ebdde7a83f7f86&');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:20px;
+width:20px;
+  display:inline-block; 
+vertical-align: middle;
+padding-right: 50px;
+padding-top: 30px;
+padding-left: 0px;
+}
+.dormanor-utility:hover{
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+.baby-dormanor{
+  background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1119959815117090937/baby-dormanor.png?ex=65180ddb&is=6516bc5b&hm=a6322e14f3371db5fa261c2503d9dd5b5b4b3c5eec9c0e933689b8fde33cc584&');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:20px;
+width:20px;
+  display:inline-block; 
+vertical-align: middle;
+padding-right: 30px;
+padding-top: 30px;
+padding-left: 0px;
+}
+.baby-dormanor:hover{
+  transform: scale(1.1);
+  transition: transform .2s;
+}
