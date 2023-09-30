@@ -16,7 +16,7 @@ Dark mode:
 - rgb(22, 50, 79) */
 body {
     /* Styles for light mode */
-    background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1156671099732496545/light_mode.png?ex=6515d168&is=65147fe8&hm=7dfc246bbc27885ab9edd381bc2d23b234b43cf5d837d0581bd38654da7ffc3c&');
+    background-image: url('https://dormanor.github.io/aboutme/images/Images-used/light_mode.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -27,7 +27,7 @@ body {
 
 body.dark-mode {
     /* Styles for dark mode */
-    background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1156671558677430372/Dark_mode.png?ex=6515d1d5&is=65148055&hm=adb29bd3d1dbdf0a83dda0c2ebffa049abe52460c5ace376eb7857b32ae4be35&');
+    background-image: url('https://dormanor.github.io/aboutme/images/Images-used/Dark_mode.png');
     color: rgb(223, 224, 234);
 }
 
@@ -67,14 +67,14 @@ body.dark-mode {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-image: url('https://www.wallpaperflare.com/static/887/996/885/drawing-sky-clouds-cloudy-wallpaper.jpg');
+    background-image: url('https://dormanor.github.io/aboutme/images/Images-used/drawing-sky-clouds-cloudy-wallpaper.jpg');
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
     
-    background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1156298612842713119/Untitled-1.png?ex=65147680&is=65132500&hm=12cd8c1158d2fba971d7f05200d303699251ecaea8f9065a1768ab24e1e2a409&');
+    background-image: url('https://dormanor.github.io/aboutme/images/Images-used/Untitled-1.png');
     
   }
   
@@ -91,23 +91,16 @@ body.dark-mode {
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
-    background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1156916254108557352/drawing-sky-clouds-cloudy-wallpaper.png?ex=6516b5b9&is=65156439&hm=78d4c1853684875a9dbab577a7779f8f7f16152a7f8fb9594eb5ffe28b7f276a&');
+    background-image: url('https://dormanor.github.io/aboutme/images/Images-used/drawing-sky-clouds-cloudy-wallpaper.png');
     background-size: cover;
   }
-  /*links::
-  light mode:
-    Rounder: https://i.ibb.co/7JfqXxB/sunny.png
-    Slider: https://www.wallpaperflare.com/static/887/996/885/drawing-sky-clouds-cloudy-wallpaper.jpg
-  dark mode: 
-    Rounder: https://i.ibb.co/FxzBYR9/night.png
-    Slider: https://static.vecteezy.com/system/resources/previews/001/308/886/original/night-sky-with-stars-vector.jpg */
   .slider.round:before {
     border-radius: 50%;
-    background: url('https://i.ibb.co/7JfqXxB/sunny.png')
+    background: url('https://dormanor.github.io/aboutme/images/Images-used/sunny.png')
    
   }
   input:checked + .slider:before {
-    background:url('https://i.ibb.co/FxzBYR9/night.png');
+    background:url('https://dormanor.github.io/aboutme/images/Images-used/night.png');
     background-repeat: no-repeat;
   }
   .dormanor-image{
@@ -631,7 +624,7 @@ body.dark-mode #skills{
 }
 /* projects */
 .dormanor-utility{
-  background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1157381127758172302/cute_dragon_fruit.png?ex=651866ab&is=6517152b&hm=aa5bebab059ac9da8c9c468f14d586f4c71569d978019eb1f5ebdde7a83f7f86&');
+  background-image: url('https://dormanor.github.io/aboutme/images/Images-used/cute_dragon_fruit.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -648,7 +641,7 @@ padding-left: 0px;
   transition: transform .2s;
 }
 .baby-dormanor{
-  background-image: url('https://cdn.discordapp.com/attachments/363425141192917014/1119959815117090937/baby-dormanor.png?ex=65180ddb&is=6516bc5b&hm=a6322e14f3371db5fa261c2503d9dd5b5b4b3c5eec9c0e933689b8fde33cc584&');
+  background-image: url('https://dormanor.github.io/aboutme/images/Images-used/baby-dormanor.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
